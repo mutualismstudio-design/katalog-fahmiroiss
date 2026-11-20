@@ -27,7 +27,24 @@ requiredSections.forEach(sec => {
   assert(guideContent.includes(sec), `Guide should contain section/keyword: ${sec}`);
 });
 
-// 2. Verify index.html (Bridge Page)
+// 2. Verify strategi-affiliate-tanpa-link.md
+const zeroLinkPath = path.join(__dirname, 'strategi-affiliate-tanpa-link.md');
+assert(fs.existsSync(zeroLinkPath), 'Zero-link guide must exist');
+const zeroLinkContent = fs.readFileSync(zeroLinkPath, 'utf8');
+
+const requiredZeroLinkSections = [
+  'Keyword DM Trigger',
+  'Call-to-Profile',
+  'Voucher Code',
+  'Engagement First, Link on Demand',
+  '10 Template Postingan Threads "Zero-Link"'
+];
+
+requiredZeroLinkSections.forEach(sec => {
+  assert(zeroLinkContent.includes(sec), `Zero-link guide should contain: ${sec}`);
+});
+
+// 3. Verify index.html (Bridge Page)
 const htmlPath = path.join(__dirname, 'index.html');
 assert(fs.existsSync(htmlPath), 'Bridge page HTML must exist');
 const htmlContent = fs.readFileSync(htmlPath, 'utf8');
