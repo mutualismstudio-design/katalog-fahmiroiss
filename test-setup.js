@@ -44,7 +44,24 @@ requiredZeroLinkSections.forEach(sec => {
   assert(zeroLinkContent.includes(sec), `Zero-link guide should contain: ${sec}`);
 });
 
-// 3. Verify index.html (Bridge Page)
+// 3. Verify storytelling-shopee-playbook.md
+const storyPath = path.join(__dirname, 'storytelling-shopee-playbook.md');
+assert(fs.existsSync(storyPath), 'Storytelling playbook must exist');
+const storyContent = fs.readFileSync(storyPath, 'utf8');
+
+const requiredStorySections = [
+  'Anatomi 4 Babak Storytelling Threads',
+  'Insiden Pemicu (Hook)',
+  '10 Cerita Nyata Siap Posting (Produk Shopee)',
+  'Shopee Mall atau Star+',
+  'Koleksiku Shopee'
+];
+
+requiredStorySections.forEach(sec => {
+  assert(storyContent.includes(sec), `Story playbook should contain: ${sec}`);
+});
+
+// 4. Verify index.html (Bridge Page)
 const htmlPath = path.join(__dirname, 'index.html');
 assert(fs.existsSync(htmlPath), 'Bridge page HTML must exist');
 const htmlContent = fs.readFileSync(htmlPath, 'utf8');

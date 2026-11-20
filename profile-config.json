@@ -1,46 +1,104 @@
 {
-  "generatedAt": "2026-11-20T12:22:07.903Z",
-  "niche": "AI, Tech & Desk Setup",
+  "generatedAt": "2026-11-20T12:31:50.644Z",
+  "niche": "Katalog Shopee Pilihan @fahmiroiss",
   "suggestedHandle": "fahmiroiss",
-  "bio": "Eksplorasi AI tools, otomasi & setup kerja harian.\nReview jujur tools & perlengkapan yang dipakai.\nKatalog rekomendasi & diskon di bawah 👇",
+  "bio": "Koleksi barang setup meja, audio, kopi & gear harian yang sudah dites langsung.\nToko Shopee resmi & garansi jelas 👇",
   "threadsPostLimit": 500,
   "firstPost": {
-    "content": "Kemarin ada yang nanya bot Telegram AI Gemini kemarin di-host di mana biar jalan 24 jam tanpa laptop standby.\n\nSaya deploy di VPS Linux Hostinger, setup 15 menit via SSH, cost under 50k/bulan.\n\nPanduan ringkas & link diskon hostingnya saya taruh di bio ya! #affiliate",
-    "charCount": 267,
+    "content": "Dulu tiap jam 3 sore kepala bagian belakang rasanya kayak ditusuk jarum.\n\nTernyata masalahnya layar laptop terlalu rendah. Iseng beli laptop stand aluminium 80 ribuan di Shopee, leher langsung rileks dan ga pegal lagi.\n\nToko Shopee tempat saya beli ada di katalog bio nomor 01 ya.",
+    "charCount": 280,
     "withinLimit": true
   },
   "catalog": [
     {
-      "name": "Cloud VPS Hostinger (Deploy AI Bot 24/7)",
-      "cat": "tools",
-      "price": "Mulai Rp 39.000/bln",
-      "badge": "Hosting AI Bot",
-      "desc": "Deploy Python Telegram bot & web app 24 jam tanpa perlu laptop nyala.",
-      "affiliateUrl": "https://hostinger.co.id?REFERRALCODE=FAHMIROIS"
+      "no": "01",
+      "name": "Aluminium Laptop Stand Adjustable",
+      "cat": "desk",
+      "price": "Rp 85.000",
+      "badge": "Anti Sakit Leher",
+      "desc": "Bahan tebal anti goyang, sejajar mata biar leher ga tegang.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/aluminium-laptop-stand-adjustable"
     },
     {
+      "no": "02",
       "name": "Tangzu Wan'er S.G In-Ear Monitor",
       "cat": "gadget",
       "price": "Rp 240.000",
-      "badge": "Audiophile Budget",
-      "desc": "Tuning vokal jernih, mic bersih, kabel detachable.",
+      "badge": "Audio Jernih",
+      "desc": "Detail vokal & instrumen Coldplay/Jazz jernih, mic meeting bersih.",
       "affiliateUrl": "https://shope.ee/fahmiroiss/tangzu-wan'er-s.g-in-ear-monitor"
     },
     {
+      "no": "03",
       "name": "Baseus Monitor ScreenBar LED",
       "cat": "desk",
       "price": "Rp 310.000",
-      "badge": "Setup Ngoding",
-      "desc": "Cahaya fokus ke meja tanpa silau di layar saat coding malam.",
+      "badge": "Mata Nyaman",
+      "desc": "Cahaya fokus ke meja tanpa silau di layar saat lembur malam.",
       "affiliateUrl": "https://shope.ee/fahmiroiss/baseus-monitor-screenbar-led"
     },
     {
+      "no": "04",
       "name": "Timemore Chestnut C2 Manual Grinder",
       "cat": "room",
       "price": "Rp 485.000",
-      "badge": "Kopi & Fokus",
-      "desc": "Burr stainless steel presisi buat manual brew V60 harian.",
+      "badge": "Kopi V60 Wangi",
+      "desc": "Burr stainless steel presisi buat seduh kopi manual harian.",
       "affiliateUrl": "https://shope.ee/fahmiroiss/timemore-chestnut-c2-manual-grinder"
+    },
+    {
+      "no": "05",
+      "name": "Ugreen GaN 65W 3-Port Fast Charger",
+      "cat": "gadget",
+      "price": "Rp 280.000",
+      "badge": "Mungil & Ringkas",
+      "desc": "Satu batok charger buat laptop MacBook, HP, dan tablet sekaligus.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/ugreen-gan-65w-3-port-fast-charger"
+    },
+    {
+      "no": "06",
+      "name": "Heavyweight Cotton 24s Boxy T-Shirt",
+      "cat": "room",
+      "price": "Rp 75.000",
+      "badge": "Kaos Kerja Awet",
+      "desc": "Kerah dobel jahit anti-melar, bahan tebal tidak nerawang.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/heavyweight-cotton-24s-boxy-t-shirt"
+    },
+    {
+      "no": "07",
+      "name": "Magnetic Cable Organizer Clip",
+      "cat": "desk",
+      "price": "Rp 29.000",
+      "badge": "Meja Rapi",
+      "desc": "Ujung kabel nempel di pinggir meja, ga jatuh ke kolong lagi.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/magnetic-cable-organizer-clip"
+    },
+    {
+      "no": "08",
+      "name": "Stainless Vacuum Tumbler 500ml",
+      "cat": "room",
+      "price": "Rp 89.000",
+      "badge": "Es Tahan 12 Jam",
+      "desc": "Es batu ga cepat cair, meja bebas noda basah embun air.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/stainless-vacuum-tumbler-500ml"
+    },
+    {
+      "no": "09",
+      "name": "Faux Leather Deskmat 80x40cm",
+      "cat": "desk",
+      "price": "Rp 52.000",
+      "badge": "Meja Estetik",
+      "desc": "Kulit sintetis matte tahan tumpahan air, meja bebas baret.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/faux-leather-deskmat-80x40cm"
+    },
+    {
+      "no": "10",
+      "name": "Running Waist Bag Anti-Bounce",
+      "cat": "room",
+      "price": "Rp 45.000",
+      "badge": "Lari Nyaman",
+      "desc": "Muat HP & kunci, nempel pas di pinggang tanpa goyang.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/running-waist-bag-anti-bounce"
     }
   ],
   "onboardingSteps": [

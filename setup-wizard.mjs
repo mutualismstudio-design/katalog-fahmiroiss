@@ -39,16 +39,22 @@ const NICHES = {
     samplePost: 'Kalau budget under 200 ribu, jangan paksakan beli TWS wireless kalau butuh mic jernih buat call/meeting. Ambil wired IEM kabel, kualitas mic dan suaranya jauh lebih stabil.\n\nLink tipe yang saya pakai ada di bio.'
   },
   tech_creator: {
-    name: 'AI, Tech & Desk Setup',
+    name: 'Katalog Shopee Pilihan @fahmiroiss',
     handle: 'fahmiroiss',
-    bio: 'Eksplorasi AI tools, otomasi & setup kerja harian.\nReview jujur tools & perlengkapan yang dipakai.\nKatalog rekomendasi & diskon di bawah 👇',
+    bio: 'Koleksi barang setup meja, audio, kopi & gear harian yang sudah dites langsung.\nToko Shopee resmi & garansi jelas 👇',
     products: [
-      { name: 'Cloud VPS Hostinger (Deploy AI Bot 24/7)', cat: 'tools', price: 'Mulai Rp 39.000/bln', badge: 'Hosting AI Bot', desc: 'Deploy Python Telegram bot & web app 24 jam tanpa perlu laptop nyala.', affiliateUrl: 'https://hostinger.co.id?REFERRALCODE=FAHMIROIS' },
-      { name: 'Tangzu Wan\'er S.G In-Ear Monitor', cat: 'gadget', price: 'Rp 240.000', badge: 'Audiophile Budget', desc: 'Tuning vokal jernih, mic bersih, kabel detachable.' },
-      { name: 'Baseus Monitor ScreenBar LED', cat: 'desk', price: 'Rp 310.000', badge: 'Setup Ngoding', desc: 'Cahaya fokus ke meja tanpa silau di layar saat coding malam.' },
-      { name: 'Timemore Chestnut C2 Manual Grinder', cat: 'room', price: 'Rp 485.000', badge: 'Kopi & Fokus', desc: 'Burr stainless steel presisi buat manual brew V60 harian.' }
+      { no: '01', name: 'Aluminium Laptop Stand Adjustable', cat: 'desk', price: 'Rp 85.000', badge: 'Anti Sakit Leher', desc: 'Bahan tebal anti goyang, sejajar mata biar leher ga tegang.' },
+      { no: '02', name: 'Tangzu Wan\'er S.G In-Ear Monitor', cat: 'gadget', price: 'Rp 240.000', badge: 'Audio Jernih', desc: 'Detail vokal & instrumen Coldplay/Jazz jernih, mic meeting bersih.' },
+      { no: '03', name: 'Baseus Monitor ScreenBar LED', cat: 'desk', price: 'Rp 310.000', badge: 'Mata Nyaman', desc: 'Cahaya fokus ke meja tanpa silau di layar saat lembur malam.' },
+      { no: '04', name: 'Timemore Chestnut C2 Manual Grinder', cat: 'room', price: 'Rp 485.000', badge: 'Kopi V60 Wangi', desc: 'Burr stainless steel presisi buat seduh kopi manual harian.' },
+      { no: '05', name: 'Ugreen GaN 65W 3-Port Fast Charger', cat: 'gadget', price: 'Rp 280.000', badge: 'Mungil & Ringkas', desc: 'Satu batok charger buat laptop MacBook, HP, dan tablet sekaligus.' },
+      { no: '06', name: 'Heavyweight Cotton 24s Boxy T-Shirt', cat: 'room', price: 'Rp 75.000', badge: 'Kaos Kerja Awet', desc: 'Kerah dobel jahit anti-melar, bahan tebal tidak nerawang.' },
+      { no: '07', name: 'Magnetic Cable Organizer Clip', cat: 'desk', price: 'Rp 29.000', badge: 'Meja Rapi', desc: 'Ujung kabel nempel di pinggir meja, ga jatuh ke kolong lagi.' },
+      { no: '08', name: 'Stainless Vacuum Tumbler 500ml', cat: 'room', price: 'Rp 89.000', badge: 'Es Tahan 12 Jam', desc: 'Es batu ga cepat cair, meja bebas noda basah embun air.' },
+      { no: '09', name: 'Faux Leather Deskmat 80x40cm', cat: 'desk', price: 'Rp 52.000', badge: 'Meja Estetik', desc: 'Kulit sintetis matte tahan tumpahan air, meja bebas baret.' },
+      { no: '10', name: 'Running Waist Bag Anti-Bounce', cat: 'room', price: 'Rp 45.000', badge: 'Lari Nyaman', desc: 'Muat HP & kunci, nempel pas di pinggang tanpa goyang.' }
     ],
-    samplePost: 'Kemarin ada yang nanya bot Telegram AI Gemini kemarin di-host di mana biar jalan 24 jam tanpa laptop standby.\n\nSaya deploy di VPS Linux Hostinger, setup 15 menit via SSH, cost under 50k/bulan.\n\nPanduan ringkas & link diskon hostingnya saya taruh di bio ya! #affiliate'
+    samplePost: 'Dulu tiap jam 3 sore kepala bagian belakang rasanya kayak ditusuk jarum.\n\nTernyata masalahnya layar laptop terlalu rendah. Iseng beli laptop stand aluminium 80 ribuan di Shopee, leher langsung rileks dan ga pegal lagi.\n\nToko Shopee tempat saya beli ada di katalog bio nomor 01 ya.'
   }
 };
 
@@ -87,18 +93,21 @@ export function generateAccountProfile(options = {}) {
 
 export function compileBridgeHtml(profile) {
   // ponytail: inline string template ceiling ~100 items; upgrade to JSX/template engine when adding multi-page routing.
-  const cardsHtml = profile.catalog.map(item => `
+  const cardsHtml = profile.catalog.map((item, idx) => {
+    const num = item.no || String(idx + 1).padStart(2, '0');
+    return `
       <article class="product-card" data-category="${item.cat}">
         <div class="card-top">
-          <h2 class="product-name">${item.name}</h2>
+          <h2 class="product-name"><span style="color:var(--accent);margin-right:6px;">#${num}</span>${item.name}</h2>
           <span class="badge">${item.badge}</span>
         </div>
         <p class="product-desc">${item.desc}</p>
         <div class="product-price">${item.price}</div>
         <a href="${item.affiliateUrl}" target="_blank" rel="noopener sponsored" class="btn-affiliate">
-          Cek Link Resmi
+          Cek Toko Shopee (No. ${num})
         </a>
-      </article>`).join('\n');
+      </article>`;
+  }).join('\n');
 
   return `<!DOCTYPE html>
 <html lang="id">
