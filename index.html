@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI, Tech & Desk Setup - Katalog Rekomendasi</title>
+  <style>
+    :root { --bg: #0d0f12; --card-bg: #161a20; --text-main: #f3f4f6; --text-muted: #9ca3af; --accent: #10b981; --border: #262d38; --badge-bg: rgba(16, 185, 129, 0.12); --badge-text: #34d399; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); display: flex; justify-content: center; padding: 24px 16px 48px; min-height: 100vh; }
+    .container { width: 100%; max-width: 540px; display: flex; flex-direction: column; gap: 20px; }
+    .profile-header { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #10b981, #3b82f6); display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; color: #fff; }
+    .profile-title { font-size: 1.25rem; font-weight: 700; }
+    .profile-handle { font-size: 0.9rem; color: var(--text-muted); }
+    .profile-bio { font-size: 0.9rem; color: #d1d5db; line-height: 1.45; white-space: pre-line; }
+    .search-bar { width: 100%; padding: 12px 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; color: var(--text-main); font-size: 0.95rem; outline: none; }
+    .product-list { display: flex; flex-direction: column; gap: 12px; }
+    .product-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+    .product-name { font-size: 1rem; font-weight: 600; }
+    .badge { font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: var(--badge-bg); color: var(--badge-text); }
+    .product-desc { font-size: 0.85rem; color: var(--text-muted); }
+    .product-price { font-size: 0.95rem; font-weight: 700; color: #34d399; }
+    .category-pills { display: flex; gap: 8px; overflow-x: auto; }
+    .pill { background: var(--card-bg); border: 1px solid var(--border); color: var(--text-muted); padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; cursor: pointer; }
+    .pill.active { background: var(--accent); color: #fff; }
+    .btn-affiliate { display: flex; align-items: center; justify-content: center; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 0.9rem; font-weight: 600; }
+    .footer { text-align: center; font-size: 0.75rem; color: #6b7280; padding-top: 16px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="profile-header">
+      <div class="avatar">F</div>
+      <h1 class="profile-title">AI, Tech & Desk Setup</h1>
+      <p class="profile-handle">@fahmiroiss di Threads</p>
+      <p class="profile-bio">Eksplorasi AI tools, otomasi & setup kerja harian.
+Review jujur tools & perlengkapan yang dipakai.
+Katalog rekomendasi & diskon di bawah 👇</p>
+    </header>
+
+    <input type="text" id="searchInput" class="search-bar" placeholder="Cari nama barang...">
+
+    <div class="category-pills">
+      <button class="pill active" data-cat="all">Semua</button>
+      <button class="pill" data-cat="desk">Setup Meja</button>
+      <button class="pill" data-cat="room">Kamar</button>
+      <button class="pill" data-cat="gadget">Gadget</button>
+    </div>
+
+    <main class="product-list" id="productList">
+
+      <article class="product-card" data-category="tools">
+        <div class="card-top">
+          <h2 class="product-name">Cloud VPS Hostinger (Deploy AI Bot 24/7)</h2>
+          <span class="badge">Hosting AI Bot</span>
+        </div>
+        <p class="product-desc">Deploy Python Telegram bot & web app 24 jam tanpa perlu laptop nyala.</p>
+        <div class="product-price">Mulai Rp 39.000/bln</div>
+        <a href="https://hostinger.co.id?REFERRALCODE=FAHMIROIS" target="_blank" rel="noopener sponsored" class="btn-affiliate">
+          Cek Link Resmi
+        </a>
+      </article>
+
+      <article class="product-card" data-category="gadget">
+        <div class="card-top">
+          <h2 class="product-name">Tangzu Wan'er S.G In-Ear Monitor</h2>
+          <span class="badge">Audiophile Budget</span>
+        </div>
+        <p class="product-desc">Tuning vokal jernih, mic bersih, kabel detachable.</p>
+        <div class="product-price">Rp 240.000</div>
+        <a href="https://shope.ee/fahmiroiss/tangzu-wan'er-s.g-in-ear-monitor" target="_blank" rel="noopener sponsored" class="btn-affiliate">
+          Cek Link Resmi
+        </a>
+      </article>
+
+      <article class="product-card" data-category="desk">
+        <div class="card-top">
+          <h2 class="product-name">Baseus Monitor ScreenBar LED</h2>
+          <span class="badge">Setup Ngoding</span>
+        </div>
+        <p class="product-desc">Cahaya fokus ke meja tanpa silau di layar saat coding malam.</p>
+        <div class="product-price">Rp 310.000</div>
+        <a href="https://shope.ee/fahmiroiss/baseus-monitor-screenbar-led" target="_blank" rel="noopener sponsored" class="btn-affiliate">
+          Cek Link Resmi
+        </a>
+      </article>
+
+      <article class="product-card" data-category="room">
+        <div class="card-top">
+          <h2 class="product-name">Timemore Chestnut C2 Manual Grinder</h2>
+          <span class="badge">Kopi & Fokus</span>
+        </div>
+        <p class="product-desc">Burr stainless steel presisi buat manual brew V60 harian.</p>
+        <div class="product-price">Rp 485.000</div>
+        <a href="https://shope.ee/fahmiroiss/timemore-chestnut-c2-manual-grinder" target="_blank" rel="noopener sponsored" class="btn-affiliate">
+          Cek Link Resmi
+        </a>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>Disclosure: Sebagian link di halaman ini adalah tautan afiliasi berbayar (#affiliate). Kami menerima komisi kecil tanpa biaya tambahan bagi Anda.</p>
+    </footer>
+  </div>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const pills = document.querySelectorAll('.pill');
+    const cards = document.querySelectorAll('.product-card');
+    let currentCat = 'all', searchQuery = '';
+    const filter = () => cards.forEach(c => {
+      const matchCat = currentCat === 'all' || c.dataset.category === currentCat;
+      const matchQuery = c.innerText.toLowerCase().includes(searchQuery);
+      c.style.display = matchCat && matchQuery ? 'flex' : 'none';
+    });
+    searchInput.addEventListener('input', (e) => { searchQuery = e.target.value.toLowerCase().trim(); filter(); });
+    pills.forEach(p => p.addEventListener('click', () => {
+      pills.forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      currentCat = p.dataset.cat;
+      filter();
+    }));
+  </script>
+</body>
+</html>

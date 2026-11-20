@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-11-20T12:22:07.903Z",
+  "niche": "AI, Tech & Desk Setup",
+  "suggestedHandle": "fahmiroiss",
+  "bio": "Eksplorasi AI tools, otomasi & setup kerja harian.\nReview jujur tools & perlengkapan yang dipakai.\nKatalog rekomendasi & diskon di bawah 👇",
+  "threadsPostLimit": 500,
+  "firstPost": {
+    "content": "Kemarin ada yang nanya bot Telegram AI Gemini kemarin di-host di mana biar jalan 24 jam tanpa laptop standby.\n\nSaya deploy di VPS Linux Hostinger, setup 15 menit via SSH, cost under 50k/bulan.\n\nPanduan ringkas & link diskon hostingnya saya taruh di bio ya! #affiliate",
+    "charCount": 267,
+    "withinLimit": true
+  },
+  "catalog": [
+    {
+      "name": "Cloud VPS Hostinger (Deploy AI Bot 24/7)",
+      "cat": "tools",
+      "price": "Mulai Rp 39.000/bln",
+      "badge": "Hosting AI Bot",
+      "desc": "Deploy Python Telegram bot & web app 24 jam tanpa perlu laptop nyala.",
+      "affiliateUrl": "https://hostinger.co.id?REFERRALCODE=FAHMIROIS"
+    },
+    {
+      "name": "Tangzu Wan'er S.G In-Ear Monitor",
+      "cat": "gadget",
+      "price": "Rp 240.000",
+      "badge": "Audiophile Budget",
+      "desc": "Tuning vokal jernih, mic bersih, kabel detachable.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/tangzu-wan'er-s.g-in-ear-monitor"
+    },
+    {
+      "name": "Baseus Monitor ScreenBar LED",
+      "cat": "desk",
+      "price": "Rp 310.000",
+      "badge": "Setup Ngoding",
+      "desc": "Cahaya fokus ke meja tanpa silau di layar saat coding malam.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/baseus-monitor-screenbar-led"
+    },
+    {
+      "name": "Timemore Chestnut C2 Manual Grinder",
+      "cat": "room",
+      "price": "Rp 485.000",
+      "badge": "Kopi & Fokus",
+      "desc": "Burr stainless steel presisi buat manual brew V60 harian.",
+      "affiliateUrl": "https://shope.ee/fahmiroiss/timemore-chestnut-c2-manual-grinder"
+    }
+  ],
+  "onboardingSteps": [
+    "1. Buka instagram.com atau aplikasi Instagram, daftar dengan email khusus.",
+    "2. Ubah akun ke Profesional (Creator) di menu Pengaturan Akun.",
+    "3. Salin teks Bio & Handle yang telah digenerate ke profil IG.",
+    "4. Login ke Threads menggunakan akun IG tersebut.",
+    "5. Unggah First Post perdana dan sematkan link katalog di bio."
+  ]
+}
